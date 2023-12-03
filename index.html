@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //hw task 1
+//--------1-------------------------------
+        // let questions = ["Солнце - это звезда?", "Земля - это планета?", "Вода - это жидкость?", "Огонь - это газ?", "Воздух - это твердое тело?"];
+        // let answ = ["да", "да", "да", "нет", "нет"];
+
+        // function myFunction()
+        // {
+        //     let score = 0;
+        //     let userAnsw;
+        //     for(let q of questions){
+        //         userAnsw = prompt(q);
+        //         if(userAnsw === answ[questions.indexOf(q)]){
+        //             score++;
+        //         }
+        //     }
+        //     alert("Your score " + score + "/5!");
+        // }
+        // myFunction();
+
+//--------2-------------------------------
+        // function checkFio(fio){
+        //         let symbol = ",;!?:'%$#@~`&*()_+=-[]{}<>|";
+        //         for(let element of fio){
+        //                 if(symbol.includes(element)){
+        //                         alert("Wrong fio!");
+        //                         break;
+        //                 }
+        //         }
+        // }
+        // checkFio("Maria!!");
+
+//--------3-------------------------------
+        // function partAdress(adress){
+        //         let protocol, host, path, name, str;
+
+        //         for(let i = 0; i <= adress.indexOf(":"); i++) 
+        //         {
+        //                 protocol += adress[i];
+        //         }
+                
+        //         for(let i = adress.indexOf(":") + 3; i < adress.indexOf('/', (adress.indexOf(":") + 3)); i++)
+        //         {
+        //                 host += adress[i];
+        //         }
+                
+        //         for(let i = adress.indexOf('/', (adress.indexOf(":") + 3)); i < adress.lastIndexOf("/"); i++)
+        //         {
+        //                 path += adress[i];
+        //         }
+                
+
+        //         if (adress.lastIndexOf("?") == -1)
+        //         {
+        //                 for(let i = adress.lastIndexOf("/") + 1; i < adress.length; i++)
+        //                 {
+        //                     name += adress[i];    
+        //                 }
+                
+        //         }
+                
+        //         else {
+        //                 for(let i = adress.lastIndexOf("/") + 1; i < adress.indexOf("?"); i++)
+        //                 {
+        //                         nameFile += adress[i];
+        //                 }
+                        
+        //                 for(let i = adress.indexOf("?") + 1; i < adress.length; i++)
+        //                 {
+        //                         str += adress[i]; 
+        //                 }
+                        
+        //         }
+
+        //         document.write("URL:" + adress + "<br>");
+        //         document.write("Протокол:" + protocol  + "<br>");
+        //         document.write("Хост: " + host +"<br>");
+        //         document.write("Путь: " + path + "<br>");
+        //         document.write("Имя файла:" + name + "<br>");
+        //         document.write("Строка запроса:" + str + "<br>");
+        //         document.write("<br><br>");
+
+        // }
+        // partAdress("http://www.ufa.com.ua/utilites/hdd/out.php?sort=2");
+
+        // hw2 task 2
+        // let arr1 = [1,4,3,8,2,7];
+        // let arr2 = [1,6,2,9,-4,3];
+//--------1-------------------------------
+        // function allNum(arr1, arr2){
+        //     let rez = [];
+
+        //     for (let element of arr1) {
+        //         if (!rez.includes(element)) {
+        //             rez.push(element);
+        //         }
+        //     }
+
+        //     for (let element of arr2) 
+        //     {
+        //         if (!rez.includes(element)) 
+        //         {
+        //             rez.push(element);
+        //         }
+        //     }
+        //     return rez;
+        // }
+
+        // let rez = [] = allNum(arr1, arr2);
+        // //console.log(rez);
+
+//--------2-------------------------------
+
+        // function commonNum(arr1, arr2){
+        //     let rez = [];
+
+        //     for(let element of arr1)
+        //     {
+        //         if(arr2.includes(element))
+        //         {
+        //             if(!rez.includes(element))
+        //             {
+        //                 rez.push(element);
+        //             }
+        //         }
+        //     }
+        //     return rez;
+        // }
+        // let rez2 = [] = commonNum(arr1, arr2);
+        // //console.log(rez2);
+
+//--------3-------------------------------
+        // function allFromArr1(arr1, arr2){
+        //     let rez = [];
+        //     for(let element of arr1){
+        //         if(!arr2.includes(element)){
+        //             rez.push(element);
+        //         }
+        //     }
+        //     return rez;
+        // }
+        // let rez3 = [] = allFromArr1(arr1, arr2);
+        // //console.log(rez3);
+//------------------------------------------------------------------
+
+        // //hw task3
+
+        // let fruits = ["apple", "tangerine", "pear", "kiwi", "orange", "banana"];
+        // fruits.sort();      //result: ['apple', 'banana', 'kiwi', 'orange', 'pear', 'tangerine']
+
+//--------1-------------------------------
+        // function showList(arr){
+        //     document.write("<ul>");
+        //     for(let i = 0; i < arr.length; i++)
+        //     {
+        //         document.write("<li>" + arr[i] + "</li");
+        //             document.write("<br/>");
+        //     }
+        //     document.write("</ul>");
+        // }
+        // //showList(fruits);
+      
+        // function toLowerCase(str) {
+        //     return str.toLowerCase();
+        // }
+
+//--------2-------------------------------
+        // function FindEl(arr, name){
+
+        //     for(let i = 0; i < arr.length; i++){
+        //         if(arr[i] == name.toLowerCase()){
+        //             return i;
+        //         }
+        //         else if(i == arr.length-1){
+        //             return -1;
+        //         }
+        //     }
+        // }
+        // let answ = FindEl(fruits, "PEAR");
+        // //console.log(answ);
+
+
+
+    </script>
+</body>
+</html>
